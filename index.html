@@ -11,11 +11,20 @@
 	section{ height: 500px; 
 			margin-bottom: 5px; position: relative;}
 	.sanggak{width: 400px; z-index: 9998; position: absolute; 
-			 left: 600px; top: 250px}
+			 left: 600px; top: 250px; display: block; animation: r 2s infinite alternate linear;}
+			 	@keyframes r{
+			from{ }
+			to{ top: 100px }
 	.bfbee{width: 200px; z-index: 9999; position: absolute;
-			left: 680px; top: 120px;}
+			left: 680px; top: 120px; display: block; animation: rr 1s infinite linear;}
+			@keyframes rr{
+			from{ }
+			to{ transform: rotate3D(0,1,0,360deg); }
 	.yellb{width: 1000px; z-index: 1; position: absolute;
-			left: -100px; top: -200px; transform: rotate(90deg);}
+			left: -100px; top: -200px; transform: rotate(90deg); display: block; animation: rrr 30s infinite alternate linear;}
+				@keyframes rrr{
+			from{ }
+			to{ top: 200px; }
 	.faces{width: 1000px; position: absolute; z-index: 0;
 			left: 800px; top: 100px; transform: rotate(-90deg);}
 	.lleg{width: 1000px; transform: rotate(65deg); position: absolute; z-index: 9998; top: 0;}
@@ -59,18 +68,19 @@
 	.wing{width: 1400px; position: absolute; z-index: 0; left: -20px; top: 1700px;}
 	.girls{width: 500px; position: absolute; z-index: 0; left: -10px; top: 2520px;}
 	.poz{width: 200px; position: absolute; z-index: 1; left: 1200px; top: 1620px;}
-	.na{width: 600px; position: absolute; z-index: 0; left: 850px;}
+	.na{width: 600px; position: absolute; z-index: 0; left: 850px; 
+			display: block; animation: ro 40s infinite linear;}
 	.woan{width: 600px; position: absolute; z-index: 0; left: -50px; top: 100px;}
 	.zun{width: 600px; position: absolute; z-index: 0; left: 450px; top: 100px;}
 	.hee{width: 800px; position: absolute; z-index: 0; left: 800px; top: 500px;}
 	.sae{width: 800px; position: absolute; z-index: 0; left: -50px; top: 850px;}
 	.doaeth{width: 800px; position: absolute; z-index: 0; left: 0px; top: 2800px;}
 	.ua{width: 800px; position: absolute; z-index: 0; left: 0px; top: 3600px;}
+	
 </style>
 
 
 <body>
-	<div></div>
 	<div class="wrap">
 	<section>
 		<img src="a.png" class="na">
@@ -123,7 +133,7 @@
 		<img src="girls.jpg" class="girls">
 		<img src="11poz.png" class="poz">
 	</section>
-
 	</div>
+	<div><div style="clear:both"></div></div>S
 </body>
 </html>
